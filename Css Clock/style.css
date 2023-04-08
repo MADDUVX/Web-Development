@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.clock{
+position: absolute;
+width: 400px;
+height: 380px;
+border-radius: 50%;
+background-color: rgb(168, 193, 203);
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+margin :auto auto;
+
+
+}
+
+.img{
+    border-radius: 100%;
+    width: 400px;
+    height: 380px;
+    opacity: 75%;
+
+}
+
+
+.hours{
+    position: absolute;
+    width: 8px;
+    height: 70px;
+    background-color: rgba(61, 50, 50, 0.323);
+    border-radius: 3px;
+    top:120px;
+    right:200px;
+    transform-origin: bottom center;
+    animation: time 40s  infinite;
+    animation-timing-function: linear;
+    
+}
+
+ .minutes{ 
+    position: absolute;
+    width: 8px;
+    height: 100px;
+    background-color:rgba(61, 50, 50, 0.323);
+    border-radius: 3px;
+    top:90px;
+    right:200px;
+    transform-origin: bottom center;
+    animation: time 15s  infinite;
+    animation-timing-function: linear;
+    
+ } 
+
+.circle{
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: -5px;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(83, 81, 81);
+    border-radius: 50%;
+    margin: auto auto;
+}
+
+.seconds{
+    position: absolute;
+    width: 3px;
+    height: 130px;
+    background-color: rgb(234, 53, 53);
+    border-radius: 4px;
+    top:60px;
+    right:201px;
+    transform-origin: bottom center;
+    animation: time 5s  infinite;
+    animation-timing-function: linear;
+    
+}
+
+ @keyframes time { 
+    from{transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+    
+ } 
